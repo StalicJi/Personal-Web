@@ -1,0 +1,323 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+body {
+  background-color: rgb(11, 11, 11);
+  position: relative;
+}
+
+nav.navbar {
+  padding: 0;
+}
+
+div.container-fluid {
+  background-color: rgb(55, 55, 55);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+a.navbar-brand span {
+  font-size: 1.4rem;
+  color: rgb(208, 167, 0);
+  font-weight: 800;
+}
+
+div ul li a.nav-link {
+  color: #ffffff;
+}
+div ul li a.nav-link:hover {
+  color: rgb(208, 167, 0);
+  scale: 1.1;
+}
+
+main section.backgroung-img {
+  min-height: 70vh;
+  background-image: url("../image/6166719.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+main section.backgroung-img div.tatal-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  margin: 0 10px;
+}
+main section.backgroung-img div.tatal-text div.text {
+  display: flex;
+  width: 50vh;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+main section.backgroung-img div.tatal-text div.text div.helloim {
+  margin-right: 20px;
+  display: flex;
+  width: 100%;
+}
+main section.backgroung-img div.tatal-text div.text div.helloim h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: rgb(208, 167, 0);
+  text-align: center;
+  width: 90px;
+  border-radius: 20px;
+}
+main section.backgroung-img div.tatal-text div.text div.helloim h5 {
+  margin-bottom: 0;
+  padding: 5px 20px 0 20px;
+  font-size: 1.3rem;
+}
+main section.backgroung-img div.tatal-text div.text div.name {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main section.backgroung-img div.tatal-text div.text div.name p.fname {
+  font-size: 3rem;
+}
+main section.backgroung-img div.tatal-text div.text div.name p.lname {
+  font-size: 3rem;
+  color: rgb(208, 167, 0);
+}
+main section.backgroung-img div.tatal-text img.myphoto {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  border-radius: 20px;
+  box-shadow: rgba(215, 192, 17, 0.3607843137) -10px 15px 25px -6px;
+  margin-top: 5rem;
+}
+main section.aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+main section.aboutme h2 {
+  text-align: center;
+  margin-top: 3%;
+  font-size: 2rem;
+  width: 30%;
+  color: transparent; /* 文字顏色設定透明 */
+  background-image: linear-gradient(45deg, rgb(208, 167, 0), #fefefe 100%); /* 設定漸層角度及顏色 */
+  -webkit-background-clip: text; /* 背景裁剪成文字的前景色 */
+  background-clip: text;
+}
+main section.aboutme div.aboutme2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main section.aboutme div.aboutme2 img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  box-shadow: rgba(215, 192, 17, 0.3607843137) 0px 10px 6px, rgba(215, 192, 17, 0.2) 0px 3px 6px;
+}
+main section.aboutme div.aboutme2 img:hover {
+  scale: 1.1;
+  transition: all 0.5s ease;
+  box-shadow: rgba(215, 192, 17, 0.3607843137) 0px 20px 25px -6px, rgba(215, 192, 17, 0.2431372549) 0px 3px 25px -6px;
+}
+main section.aboutme div.aboutme2 div.aboutme-text {
+  width: 40%;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+main section.aboutme div.aboutme2 div.aboutme-text div.text-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  margin-bottom: 2rem;
+}
+main section.aboutme div.aboutme2 div.aboutme-text div.text-title h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+main section.aboutme div.aboutme2 div.aboutme-text div.text-title p {
+  font-size: 1.3rem;
+  color: #0f6292;
+}
+main section.aboutme div.aboutme2 div.aboutme-text div.item1 {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+main section.aboutme div.aboutme2 div.aboutme-text div.item2 {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+main section.aboutme div.aboutme2 div.aboutme-text div.item3 {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+main section.background-img2 {
+  background-image: url("../image/589.jpg");
+  min-height: 70vh;
+  opacity: 0.8;
+  background-size: cover;
+  background-position: center;
+  padding-top: 5%;
+  transform: skewY(2deg);
+}
+main section.background-img2 div.mylearn {
+  display: flex;
+  flex-wrap: wraps;
+  justify-content: space-around;
+  transform: skewY(-2deg);
+}
+main section.background-img2 div.mylearn h2 {
+  text-align: center;
+  font-size: 2rem;
+  width: 30%;
+  color: transparent; /* 文字顏色設定透明 */
+  background-image: linear-gradient(45deg, rgb(208, 167, 0), #fefefe 100%); /* 設定漸層角度及顏色 */
+  -webkit-background-clip: text; /* 背景裁剪成文字的前景色 */
+  background-clip: text;
+}
+main section.background-img2 div.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  transform: skewY(-2deg);
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  margin-top: 5%;
+}
+main section.background-img2 i.bx {
+  background-color: rgba(255, 255, 255, 0.8823529412);
+  text-align: center;
+  border-radius: 20px;
+  margin: 1rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  width: 300px;
+}
+main section.background-img2 i.bx:hover {
+  transform: translateY(-20px);
+  transition: all 0.3s ease 0s;
+}
+main section.background-img2 i.bx img {
+  opacity: 0.9;
+  width: 20%;
+  padding-top: 1.2rem;
+}
+main section.background-img2 i.bx div.cardtitle h3 {
+  text-align: center;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  color: transparent; /* 文字顏色設定透明 */
+  background-image: linear-gradient(45deg, black, #7d7d7d 100%); /* 設定漸層角度及顏色 */
+  -webkit-background-clip: text; /* 背景裁剪成文字的前景色 */
+  background-clip: text;
+  padding: 2rem 1rem;
+}
+main section.background-img2 i.bx div.list {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main section.background-img2 i.bx div.list ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+main section.background-img2 i.bx div.list ul li {
+  color: black;
+  list-style-type: none;
+  text-align: center;
+  align-items: center;
+  color: #5f5e5e;
+}
+main section.background-img3 {
+  background-image: url("../image/purple.jpg");
+  min-height: 70vh;
+  opacity: 0.8;
+  background-size: cover;
+  background-position: center;
+  padding-top: 3%;
+  transform: skewY(-2deg);
+}
+main section.background-img3 div.area {
+  width: 100%;
+  transform: skewY(2deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.background-img3 div.area div.portfolio h2 {
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  color: transparent; /* 文字顏色設定透明 */
+  background-image: linear-gradient(45deg, rgb(208, 167, 0), #fefefe 100%); /* 設定漸層角度及顏色 */
+  -webkit-background-clip: text; /* 背景裁剪成文字的前景色 */
+  background-clip: text;
+}
+main section.background-img3 div.area div.carousel {
+  margin: 2rem 0;
+  width: 50%;
+  background-size: cover;
+}
+main section.background-img3 div.area div.carousel div.carousel-inner div.carousel-item img {
+  opacity: 0.7;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 600px;
+  height: 600px;
+}
+main section.background-img3 div.area div.carousel div.carousel-inner div.carousel-item div.carousel-caption {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-color: rgba(1, 106, 193, 0.6274509804);
+  border-radius: 20px;
+}
+main section.background-img3 div.area div.carousel div.carousel-inner div.carousel-item div.carousel-caption a {
+  text-decoration: none;
+}
+main section.background-img3 div.area div.carousel div.carousel-inner div.carousel-item div.carousel-caption a h5 {
+  color: #ffffff;
+}
+main section.background-img3 div.area div.carousel div.carousel-inner div.carousel-item div.carousel-caption a h5:hover {
+  scale: 1.1;
+}
+main section.contactme div.contact-title {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main section.contactme div.contact-title a img {
+  width: 6vh;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 570px) {
+  main section div.aboutme2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  main section div.card {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

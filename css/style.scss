@@ -1,0 +1,406 @@
+$themeColor: rgb(208, 167, 0);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+body {
+  background-color: rgb(11, 11, 11);
+  position: relative;
+}
+nav.navbar {
+  padding: 0;
+}
+
+div.container-fluid {
+  background-color: rgb(55, 55, 55);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+a.navbar-brand {
+  span {
+    font-size: 1.4rem;
+    color: $themeColor;
+    font-weight: 800;
+  }
+}
+
+div ul li a.nav-link {
+  color: #ffffff;
+  &:hover {
+    color: $themeColor;
+    scale: 1.1;
+  }
+}
+
+// main--------------------------------------------
+main {
+  section.backgroung-img {
+    // border: 2px solid rgb(251, 239, 239);
+    min-height: 70vh;
+    background-image: url("../image/6166719.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+
+    div.tatal-text {
+      //   border: 2px solid red;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding-top: 50px;
+      margin: 0 10px;
+
+      div.text {
+        // border: 2px solid red;
+        display: flex;
+        width: 50vh;
+        flex-direction: column;
+        margin-top: 2rem;
+        div.helloim {
+          //   border: 2px solid red;
+          margin-right: 20px;
+          display: flex;
+          width: 100%;
+          h3 {
+            font-size: 1.5rem;
+            color: #ffffff;
+            background-color: $themeColor;
+            text-align: center;
+            width: 90px;
+            border-radius: 20px;
+          }
+          h5 {
+            // border: 2px solid rgb(0, 255, 119);
+            margin-bottom: 0;
+
+            padding: 5px 20px 0 20px;
+            font-size: 1.3rem;
+          }
+        }
+        div.name {
+          //   border: 2px solid rgb(0, 21, 255);
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          p.fname {
+            font-size: 3rem;
+          }
+          p.lname {
+            font-size: 3rem;
+            color: $themeColor;
+          }
+        }
+      }
+      img.myphoto {
+        // border: 2px solid rgb(81, 0, 255);
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        border-radius: 20px;
+        box-shadow: #d7c0115c -10px 15px 25px -6px;
+        margin-top: 5rem;
+      }
+    }
+  }
+  section.aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    h2 {
+      //   border: 2px solid red;
+      text-align: center;
+      margin-top: 3%;
+      font-size: 2rem;
+      width: 30%;
+      color: transparent; /* 文字顏色設定透明 */
+      background-image: linear-gradient(
+        45deg,
+        $themeColor,
+        #fefefe 100%
+      ); /* 設定漸層角度及顏色 */
+      -webkit-background-clip: text; /* 背景裁剪成文字的前景色 */
+      background-clip: text;
+    }
+
+    div.aboutme2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // border: 2px solid rgb(47, 0, 255);
+        width: 20%;
+        height: 20%;
+        border-radius: 50%;
+        box-shadow: #d7c0115c 0px 10px 6px, #d7c01133 0px 3px 6px;
+        &:hover {
+          scale: 1.1;
+          transition: all 0.5s ease;
+          box-shadow: #d7c0115c 0px 20px 25px -6px, #d7c0113e 0px 3px 25px -6px;
+        }
+      }
+
+      div.aboutme-text {
+        // border: 2px solid rgb(255, 0, 0);
+        width: 40%;
+        margin-top: 5%;
+        margin-left: 5%;
+        div.text-title {
+          //   border: 2px solid rgb(47, 0, 255);
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          -webkit-box-pack: justify;
+          margin-bottom: 2rem;
+          h3 {
+            font-size: 1.3rem;
+            font-weight: 800;
+          }
+          p {
+            font-size: 1.3rem;
+            color: #0f6292;
+          }
+        }
+        div.item1 {
+          //   border: 2px solid rgb(255, 0, 0);
+          margin-bottom: 2rem;
+          text-align: justify;
+        }
+        div.item2 {
+          //   border: 2px solid rgb(0, 255, 98);
+          margin-bottom: 2rem;
+          text-align: justify;
+        }
+        div.item3 {
+          //   border: 2px solid rgb(255, 174, 0);
+          margin-bottom: 2rem;
+          text-align: justify;
+        }
+      }
+    }
+  }
+  section.background-img2 {
+    background-image: url("../image/589.jpg");
+    min-height: 70vh;
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center;
+    padding-top: 5%;
+    transform: skewY(2deg);
+
+    div.mylearn {
+      display: flex;
+      flex-wrap: wraps;
+      justify-content: space-around;
+      transform: skewY(-2deg);
+      h2 {
+        // border: 2px solid red;
+        text-align: center;
+        font-size: 2rem;
+        width: 30%;
+        color: transparent; /* 文字顏色設定透明 */
+        background-image: linear-gradient(
+          45deg,
+          $themeColor,
+          #fefefe 100%
+        ); /* 設定漸層角度及顏色 */
+        -webkit-background-clip: text; /* 背景裁剪成文字的前景色 */
+        background-clip: text;
+      }
+    }
+
+    div.card {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      transform: skewY(-2deg);
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+      margin-top: 5%;
+    }
+
+    i.bx {
+      // border: 2px solid rgb(0, 21, 255);
+      background-color: #ffffffe1;
+      text-align: center;
+      border-radius: 20px;
+      margin: 1rem 2rem;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      width: 300px;
+
+      &:hover {
+        transform: translateY(-20px);
+        transition: all 0.3s ease 0s;
+      }
+
+      img {
+        //   border: 2px solid rgb(85, 255, 0);
+        opacity: 0.9;
+        width: 20%;
+        padding-top: 1.2rem;
+      }
+      div.cardtitle {
+        h3 {
+          text-align: center;
+          // border: 2px solid rgb(85, 255, 0);
+          color: black;
+          font-size: 1.3rem;
+          font-weight: 700;
+          text-align: center;
+          color: transparent; /* 文字顏色設定透明 */
+          background-image: linear-gradient(
+            45deg,
+            black,
+            #7d7d7d 100%
+          ); /* 設定漸層角度及顏色 */
+          -webkit-background-clip: text; /* 背景裁剪成文字的前景色 */
+          background-clip: text;
+          padding: 2rem 1rem;
+        }
+      }
+      div.list {
+        //   border: 2px solid rgb(255, 0, 0);
+        margin-bottom: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+          // border: 2px solid rgb(85, 255, 0);
+          padding-left: 0;
+          margin-bottom: 0;
+          display: flex;
+          flex-flow: column wrap;
+          align-items: center;
+          justify-content: space-around;
+
+          li {
+            //   border: 2px solid rgb(85, 255, 0);
+            color: black;
+            list-style-type: none;
+            text-align: center;
+            //   width: 40%;
+            align-items: center;
+            color: #5f5e5e;
+          }
+        }
+      }
+    }
+  }
+  section.background-img3 {
+    background-image: url("../image/purple.jpg");
+    min-height: 70vh;
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center;
+    padding-top: 3%;
+    transform: skewY(-2deg);
+
+    div.area {
+      //   border: 2px solid white;
+      width: 100%;
+      transform: skewY(2deg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      div.portfolio {
+        h2 {
+          // border: 2px solid red;
+          padding: 20px;
+          text-align: center;
+          font-size: 2rem;
+          width: 100%;
+          color: transparent; /* 文字顏色設定透明 */
+          background-image: linear-gradient(
+            45deg,
+            $themeColor,
+            #fefefe 100%
+          ); /* 設定漸層角度及顏色 */
+          -webkit-background-clip: text; /* 背景裁剪成文字的前景色 */
+          background-clip: text;
+        }
+      }
+
+      div.carousel {
+        // border: 2px solid white;
+        margin: 2rem 0;
+        width: 50%;
+        background-size: cover;
+
+        div.carousel-inner {
+          // border: 2px solid red;
+
+          div.carousel-item {
+            img {
+              opacity: 0.7;
+              object-fit: contain;
+              width: 600px;
+              height: 600px;
+            }
+            div.carousel-caption {
+              // margin-top: 10%;
+              box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+                rgba(0, 0, 0, 0.22) 0px 15px 12px;
+              background-color: #016ac1a0;
+              border-radius: 20px;
+              a {
+                text-decoration: none;
+                h5 {
+                  color: #ffffff;
+                  &:hover {
+                    scale: 1.1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  section.contactme {
+    div.contact-title {
+      margin-top: 5rem;
+      margin-bottom: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      a {
+        img {
+          width: 6vh;
+          margin: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  main {
+    section {
+      div.aboutme2 {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    section {
+      div.card {
+        flex-direction: column;
+      }
+    }
+  }
+}
